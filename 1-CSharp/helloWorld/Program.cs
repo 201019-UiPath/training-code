@@ -11,7 +11,7 @@ namespace helloWorld
                         // vvv
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World! " + DateTime.Now);
+            //Console.WriteLine("Hello World! " + DateTime.Now);
             string firstname, lastname;
             Console.WriteLine("Please enter your first name");
             firstname = Console.ReadLine();// takes user's input in string form
