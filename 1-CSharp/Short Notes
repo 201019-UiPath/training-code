@@ -80,3 +80,19 @@ dotnet new classLib -lang C# -o HerosDB
 dotnet sln HerosApp.sln add HerosDB/HerosDB.csproj
 dotnet new xUnit -o HerosTest
 dotnet sln HerosApp.sln add HerosTest/HerosTest.csproj
+
+C#
+Namespace
+    Types
+        Members (Methods, variables, properties)
+
+Types (Classes, Enums, Structs, Interface, Delegates)
+    - Value Types - which has the direct value, stored in memory Stack, fast to access.
+        Structs, Enums. Predefined (int, long, short, byte, DateTime, char)
+    - Reference Types - it stores the reference to that value, value is stored in heap, expensive retrieval process.
+        Classes, interface, Delegates. Predefined -> string, arrays, collections etc
+
+Access Modifiers: they change the behavior and scope of the types.
+    - Scopes Modifiers : Private, public, internal, protected, protected internal and private protected
+
+Properties: like getters and setters in java. Microsoft calls them as smart fields to encapsulate the value of private variables.

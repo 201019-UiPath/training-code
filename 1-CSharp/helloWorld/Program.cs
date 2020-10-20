@@ -4,6 +4,7 @@ using System;
 //1.1 custom defined namespace
 namespace helloWorld
 {
+    // Types (Class, Struct, interface etc....)
     class Program
     {
         // execution starts here
