@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/csharp,visualstudio,visualstudiocode
-# Edit at https://www.toptal.com/developers/gitignore?templates=csharp,visualstudio,visualstudiocode
+# Created by https://www.toptal.com/developers/gitignore/api/csharp,vscode,visualstudio,visualstudiocode
+# Edit at https://www.toptal.com/developers/gitignore?templates=csharp,vscode,visualstudio,visualstudiocode
 
 ### Csharp ###
 ## Ignore Visual Studio temporary files, build results, and
@@ -370,6 +370,8 @@ MigrationBackup/
 .history
 .ionide
 
+### vscode ###
+
 ### VisualStudio ###
 
 # User-specific files
@@ -528,4 +530,4 @@ MigrationBackup/
 
 # Ionide (cross platform F# VS Code tools) working folder
 
-# End of https://www.toptal.com/developers/gitignore/api/csharp,visualstudio,visualstudiocode
+# End of https://www.toptal.com/developers/gitignore/api/csharp,vscode,visualstudio,visualstudiocode
