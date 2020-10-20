@@ -96,3 +96,7 @@ Access Modifiers: they change the behavior and scope of the types.
     - Scopes Modifiers : Private, public, internal, protected, protected internal and private protected
 
 Properties: like getters and setters in java. Microsoft calls them as smart fields to encapsulate the value of private variables.
+
+Collections: In memory Storage of data
+    - Arrays: 1-D, 2-D, jagged arrays and multi-dimensional
+    - Generics: Stack, Queues, List, Dictionery

@@ -12,14 +12,33 @@ namespace HerosUI
             Console.WriteLine($"{obj.id} {obj.name}" );*/
             #endregion
             #region Parameterized constructor
-            Hero obj1=new Hero(2, "Narco");
+            //Hero obj1=new Hero(2, "Narco");
            //Program obj1=new Program();
            //Console.WriteLine($"{obj1.id} {obj1.name}" );// cannot access the variable if they arenot public
             #endregion
             #region Access via Properties
-            Console.WriteLine(obj1.Id);// read property value
-            obj1.Id=3;
-            Console.Write($"New Id = {obj1.Id}");// write into a property
+            // Console.WriteLine(obj1.Id);// read property value
+            // obj1.Id=3;
+            // Console.Write($"New Id = {obj1.Id}");// write into a property
+            #endregion
+            #region Accessing  Arrays
+            Hero obj=new Hero();
+            /*Console.Write("Please enter your heros id: ");
+            obj.Id=Int32.Parse(Console.ReadLine());
+            Console.Write("Please enter your Superhero name:");
+            obj.Name=Console.ReadLine();
+            Console.Write("Enter the first Power: ");
+            obj.superPowers[0]
+            Console.ReadLine();
+            Console.Write($"{obj.Id} {obj.Name}  {obj.superPowers[0]}");*/
+            // Jagged Arrays rows initializations
+            obj.ja[0]=new int[2];// first column
+            obj.ja[1]=new int[3];// second column
+            obj.ja[2]=new int[1];// third column
+            obj.ja[0][0]=10;
+            obj.ja[1][2]=15;
+            Console.Write(obj.ja.Rank);// rank is dimenssion of the array
+            Console.Write(obj.ja.Length);// elements of the arrays
             #endregion
         }
     }
