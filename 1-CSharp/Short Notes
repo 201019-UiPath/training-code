@@ -1,0 +1,82 @@
+UiPath Batch -> Robotic Process Automation
+
+Week 1-4 -> .Net
+	- C#
+	- SQL
+	- Asp.Net (MVC, SOAP and RESTful)
+	- Front tech (HTML, CSS, JS, VB)
+Week 5-8 -> UiPath
+	- UiPath Foundation -> Studio
+	- Uipath Advanced -> ReFramework and Orchectrator
+	- UiPath New features and advanced training -> Hyperautomation and ELK
+week 9-10 -> P3, Portfolios, Client intyerviews and Showcase
+
+Training Operations
+Evaluations: Quizzes, 1 on 1s, QC, panels
+Project: P0, P1, P2, P3
+
+timings - 9:00-17:00 EST
+break 1 - 10:30 - 15 mins
+Lunch   - 12:30-13:30
+break 2 - 15:00 
+
+--------------------------------------------------------------------------------------------------------
+.net => Platform => to create apps (CUI, GUI, microservices, cloud services, IOT, game development, ML)
+
+2002 -> .net Framework 1.0
+
+
+2020 ->    .Net
+	     l
+Framework   Core(2016)       Xamarin      Mono              
+(Windows)   (platform        Phone app    (MacOS)
+		independant)		
+
+
+Components of .Net Core SDK 
+- dotnet Command Line Interface
+- dotnet libraries (standard libraries)
+- runtime/Common Language Runtime
+- Languages - C#, F#, VB
+	Common Type System
+	Common Language Specification
+
+
+Assembly vs Namespace
+Namespace-> logically arrange the types (classes) to avoid naming conflict
+Assembly-> Physical separation of types (classes) -> exe or dll
+	-> Deployable units
+
+
+C#	CTS	       VB           xyz
+int   System.Int32    integer       doo
+short Sytem.Int16     foo           zoo
+
+C#-> TypeSafe language, Case Sensitive
+
+
+HerosApp -> Solution  {mkdir <sln name>, dotnet new sln}=> make sure you have the sln directory ready
+  - UI -> Console {dotnet new console -o <project name>}, {dotnet sln <name of the solution> add <reference to the console project>>}
+  - BL -> Class Library
+  - DL -> Class Library
+  - Test -> xUnit
+
+Steps on .Net CLI 
+Project Organisation
+1. Create a folder for solution file
+<mkdir HerosApp>
+2. Navigate to solution folder
+<cd ./HerosApp/>
+3. Create a solution
+<dotnet new sln>
+4. Create a new console app
+<dotnet new console -lang C# -o HerosUI>
+5.Add the reference to the solution
+<dotnet sln HerosApp.sln add HerosUI/HerosUI.csproj>
+6. Repeat steps for the rest of the projects
+dotnet new classLib -lang C# -o HerosLib
+dotnet sln HerosApp.sln add HerosLi/HerosLib.csproj
+dotnet new classLib -lang C# -o HerosDB
+dotnet sln HerosApp.sln add HerosDB/HerosDB.csproj
+dotnet new xUnit -o HerosTest
+dotnet sln HerosApp.sln add HerosTest/HerosTest.csproj
