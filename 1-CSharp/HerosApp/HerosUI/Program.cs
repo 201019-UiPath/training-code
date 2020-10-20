@@ -37,8 +37,20 @@ namespace HerosUI
             obj.ja[2]=new int[1];// third column
             obj.ja[0][0]=10;
             obj.ja[1][2]=15;
-            Console.Write(obj.ja.Rank);// rank is dimenssion of the array
-            Console.Write(obj.ja.Length);// elements of the arrays
+            int[,,] td=new int[2,4,3];// 3-D arrays
+            Console.WriteLine($"Dimension of the Array - {td.Rank}D");
+            Console.WriteLine($"Number of elements in the Array - {td.Length}");
+            Console.WriteLine(obj.ja.Rank);// rank is dimenssion of the array
+            Console.WriteLine(obj.ja.Length);// elements of the arrays
+            // loop through the jagged array
+            foreach (var rows in obj.ja) //looping through all rows
+            {
+                //looping through all columns of every row
+                for(int i=0; i<rows.Length;i++){
+                    Console.Write($"{rows[i]} ");
+                }
+                Console.WriteLine();
+            }
             #endregion
         }
     }

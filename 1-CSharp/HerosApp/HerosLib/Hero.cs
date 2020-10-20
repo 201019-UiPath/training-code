@@ -2,7 +2,7 @@
 
 namespace HerosLib
 {
-    #region  old way of creating class members
+   #region  old way of creating class members
    /*public class Hero// default modifier -> internal
     {
     // default modifier of members of a class is private
@@ -38,8 +38,7 @@ namespace HerosLib
        public string Name { get; set; }
        public string[] superPowers=new string[10];// 1-D
        //jagged array
-       public int[][] ja=new int[3][];
-     
+       public int[][] ja=new int[3][];     
    }
    #endregion
 }
