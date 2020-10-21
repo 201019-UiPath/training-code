@@ -42,14 +42,30 @@ namespace HerosLib
        //jagged array
        //public int[][] ja=new int[3][];     
        #endregion
-       public static List<string> superPowers= new List<string>();
+      // public static List<string> superPowers= new List<string>();
+       public static Stack<string> superPowers= new Stack<string>();// LIFO
 
-       public static List<string> GetSuperPowers(){
-           superPowers.Add("Strength");
-           superPowers.Add("Fly");
-           superPowers.Add("Visibility");
-           superPowers.Add("See through");
+        public Hero()
+        {
+           superPowers.Push("Strength");
+           superPowers.Push("Fly");
+           superPowers.Push("Visibility");
+           superPowers.Push("See through");
+        }
+       public static IEnumerable<string> GetSuperPowers(){
+          
            return superPowers;
+       }
+       public void RemoveSuperPower(){//string superPower){
+           //if(superPowers.Contains(superPower)){
+               //superPowers.Remove(superPower);
+          // }    
+          superPowers.Pop();
+       }
+       public void AddSuperPower(string superPower){
+           if(superPower != null && superPower != ""){
+               superPowers.Push(superPower);
+           }
        }
    }
    #endregion

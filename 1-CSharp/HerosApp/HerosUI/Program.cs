@@ -54,9 +54,14 @@ namespace HerosUI
             }*/
                         #endregion
             #region List<T>
+            //Console.WriteLine("Please enter the super power to be removed ");
+            //string sp=Console.ReadLine();
+            //Hero.superPowers.Remove(sp);
             foreach(var superPower in Hero.GetSuperPowers()){
                 Console.WriteLine(superPower);
             }
+
+
             #endregion
         }
     }
