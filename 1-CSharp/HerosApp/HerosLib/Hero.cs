@@ -44,13 +44,17 @@ namespace HerosLib
        #endregion
       // public static List<string> superPowers= new List<string>();
        public static Stack<string> superPowers= new Stack<string>();// LIFO
-
+       public static Dictionary<string, string> hideOuts = new Dictionary<string, string>();
         public Hero()
         {
            superPowers.Push("Strength");
            superPowers.Push("Fly");
            superPowers.Push("Visibility");
            superPowers.Push("See through");
+
+           hideOuts.Add("Thor","Asgard");
+           hideOuts.Add("Batman","Batcave");
+           hideOuts.Add("Superman","Fortress Solitude ");
         }
        public static IEnumerable<string> GetSuperPowers(){
           

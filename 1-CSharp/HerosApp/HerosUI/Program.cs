@@ -53,15 +53,20 @@ namespace HerosUI
                 Console.WriteLine();
             }*/
                         #endregion
-            #region List<T>
+            #region List<T>, Stack<T>
             //Console.WriteLine("Please enter the super power to be removed ");
             //string sp=Console.ReadLine();
             //Hero.superPowers.Remove(sp);
-            foreach(var superPower in Hero.GetSuperPowers()){
-                Console.WriteLine(superPower);
+            // foreach(var superPower in Hero.GetSuperPowers()){
+            //     Console.WriteLine(superPower);
+            // }
+            #endregion
+            #region Dictionary<key, value>
+            Console.WriteLine("Super Hero     Hideout");
+            foreach(var superhero in Hero.hideOuts){
+               // Console.WriteLine($"{superhero.Key}   {Hero.hideOuts[superhero.Key]}"); // old way
+            //Console.WriteLine($"{superhero.Key} {superhero.Value}"); // new way of accessing key values
             }
-
-
             #endregion
         }
     }
