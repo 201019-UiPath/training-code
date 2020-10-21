@@ -87,6 +87,7 @@ Namespace
         Members (Methods, variables, properties)
 
 Types (Classes, Enums, Structs, Interface, Delegates)
+    - All types in  C# are inherited directly or indirectly Sytem.Object
     - Value Types - which has the direct value, stored in memory Stack, fast to access.
         Structs, Enums. Predefined (int, long, short, byte, DateTime, char)
     - Reference Types - it stores the reference to that value, value is stored in heap, expensive retrieval process.
@@ -99,4 +100,8 @@ Properties: like getters and setters in java. Microsoft calls them as smart fiel
 
 Collections: In memory Storage of data
     - Arrays: 1-D, 2-D, jagged arrays and multi-dimensional
-    - Generics: Stack, Queues, List, Dictionery
+        - drawbacks -> size of the array
+        - memory inefficient 
+    - Generics: Stack<T>, Queues<T>, List<T>, Dictionery<TKey, TValue>
+        - Type-safe classes 
+        - Memory efficient - as they grow when items added and shrink when items removed
