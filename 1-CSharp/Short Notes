@@ -54,7 +54,7 @@ short Sytem.Int16     foo           zoo
 
 C#-> TypeSafe language, Case Sensitive
 
-
+Layered Architecture of .net project - separation of concerns
 HerosApp -> Solution  {mkdir <sln name>, dotnet new sln}=> make sure you have the sln directory ready
   - UI -> Console {dotnet new console -o <project name>}, {dotnet sln <name of the solution> add <reference to the console project>>}
   - BL -> Class Library
@@ -93,8 +93,10 @@ Types (Classes, Enums, Structs, Interface, Delegates)
     - Reference Types - it stores the reference to that value, value is stored in heap, expensive retrieval process.
         Classes, interface, Delegates. Predefined -> string, arrays, collections etc
 
-Access Modifiers: they change the behavior and scope of the types.
+Access Modifiers: they change the behavior and scope of the types or types members.
     - Scopes Modifiers : Private, public, internal, protected, protected internal and private protected
+        - Using Scope modifiers encapsulation is achieved
+    - Extended Modifiers : abstract, virtual, sealed, static, partial, const, readonly, async and await
 
 Properties: like getters and setters in java. Microsoft calls them as smart fields to encapsulate the value of private variables.
 
@@ -105,3 +107,25 @@ Collections: In memory Storage of data
     - Generics: Stack<T>, Queues<T>, List<T>, Dictionery<TKey, TValue>
         - Type-safe classes 
         - Memory efficient - as they grow when items added and shrink when items removed
+
+Delegates: type-safe functions pointers in C#.
+    - Late Bindings
+    - Method Chaining - creating pipeline and lifecycle of a framework
+    - Anonymous Methods- they are also foundation of Lambda exp.
+    - Events
+    - Loose coupling
+Types 
+    - Single-Cast
+    - Multi-Cast
+    - Strongly-Typed Delegates
+
+Delegate Demo 1-
+    HerosLib    
+        IHeroSuperPowers
+            GetPowers()
+        IHeroOperations
+            DoWork()
+            ManageLife()
+        HeroTask:IHeroOperations,IHeroSuperPowers
+    HerosUI
+        Make call to operations using delegate
