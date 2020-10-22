@@ -105,3 +105,15 @@ Collections: In memory Storage of data
     - Generics: Stack<T>, Queues<T>, List<T>, Dictionery<TKey, TValue>
         - Type-safe classes 
         - Memory efficient - as they grow when items added and shrink when items removed
+
+Passing by reference
+int param;
+call method(param);
+
+method(out int param)
+
+for ref parameters
+int param = 0;
+call method(param);
+
+method(ref int param);
