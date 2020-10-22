@@ -108,6 +108,7 @@ Collections: In memory Storage of data
         - Type-safe classes 
         - Memory efficient - as they grow when items added and shrink when items removed
 
+<<<<<<< HEAD
 Delegates: type-safe functions pointers in C#.
     - Late Bindings
     - Method Chaining - creating pipeline and lifecycle of a framework
@@ -129,3 +130,16 @@ Delegate Demo 1-
         HeroTask:IHeroOperations,IHeroSuperPowers
     HerosUI
         Make call to operations using delegate
+=======
+Passing by reference
+int param;
+call method(param);
+
+method(out int param)
+
+for ref parameters
+int param = 0;
+call method(param);
+
+method(ref int param);
+>>>>>>> 9130b4fd0ee9ca7cdbef26af1bf246ec3fa9c47e
