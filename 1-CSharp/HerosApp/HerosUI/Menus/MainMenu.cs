@@ -30,10 +30,14 @@ namespace HerosUI.Menus
                             System.Console.WriteLine($"Hero {hero.Name}");
                         }
                         break;
+                    case "2":
+                        System.Console.WriteLine("Goodbye friend.");
+                        break;
+                    default:
+                        System.Console.WriteLine("Invalid input! Please select a valid option!");
+                        break;
                 }
             } while (!userInput.Equals("2"));
-           
-
         }
 
         public Hero GetHeroDetails()
