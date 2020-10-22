@@ -1,5 +1,7 @@
 using HerosLib;
 using System.Text.RegularExpressions;
+using HerosBL;
+using System.Collections.Generic;
 namespace HerosUI.Menus
 {
     /// <summary>
@@ -7,14 +9,30 @@ namespace HerosUI.Menus
     /// </summary>
     public class MainMenu:IMenu
     {
+        HeroBL heroBL = new HeroBL();
         public  void Start(){
+            string userInput; 
             do{
                 System.Console.WriteLine("Welcome Friend! What would you like to do today?");
                 //Options
-                System.Console.WriteLine("[0] Create a hero");
-            } while (!System.Console.ReadLine().Equals("0"));
-            Hero newHero = GetHeroDetails();
-            System.Console.WriteLine($"Hero {newHero.Name} was created with a superpower of {Hero.superPowers.Pop()}");
+                System.Console.WriteLine("[0] Create a hero \n[1] Get all heroes");
+                userInput = System.Console.ReadLine();
+                switch (userInput)
+                {
+                    case "0":
+                        Hero newHero = GetHeroDetails();
+                        heroBL.AddHero(newHero);
+                        System.Console.WriteLine($"Hero {newHero.Name} was created with a superpower of {Hero.superPowers.Pop()}");
+                        break;
+                    case "1":
+                        List<Hero> allheroes = heroBL.GetAllHeroes();
+                        foreach(var hero in allheroes){
+                            System.Console.WriteLine($"Hero {hero.Name}");
+                        }
+                        break;
+                }
+            } while (!userInput.Equals("0") || !userInput.Equals("1"));
+           
 
         }
 
