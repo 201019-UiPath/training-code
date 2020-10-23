@@ -72,28 +72,31 @@ namespace HerosUI
             // IMenu startMenu = new MainMenu();
             // startMenu.Start();
             #endregion
-            #region Delegate, Anonymous methods, Lambda
             HeroTasks heroTasks=new HeroTasks();
-            
+            #region Delegate, Anonymous methods, Lambda
             //HeroDel del=new HeroDel(heroTasks.GetPowers);
-            Action del =new Action(heroTasks.GetPowers);
+            //Action del =new Action(heroTasks.GetPowers);
             //Func<string, string> fd=new Func<string, string>(some method);
             //Predicate<string> predicate=new Predicate<string>(some method);            
-            del += heroTasks.DoWork; // += subscribe to a method
-            del += heroTasks.ManageLife;
-            del();
-            del -= heroTasks.ManageLife; // unsubscribe 
-            del();
+            //del += heroTasks.DoWork; // += subscribe to a method
+            //del += heroTasks.ManageLife;
+            // del();
+            // del -= heroTasks.ManageLife; // unsubscribe 
+            // del();
         
         // Anonymous methods
-        Action<string> am=delegate(string name){
-            Console.WriteLine("Hello anonymous");
-        };
-        am("Pushpinder");
+        // Action<string> am=delegate(string name){
+        //     Console.WriteLine("Hello anonymous");
+        // };
+        //am("Pushpinder");
         // Lambda expression - shorthand notations to anonymous methods
-        Action result= ()=>Console.WriteLine("Hello Lambda");
-        result();
+        // Action result= ()=>Console.WriteLine("Hello Lambda");
+        // result();
             #endregion 
-        }
+            #region Asynchronous vs Synchronous programming
+            heroTasks.DoWork();
+            heroTasks.ManageLife();
+            #endregion
+         }
     }
 }

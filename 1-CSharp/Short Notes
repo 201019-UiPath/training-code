@@ -96,7 +96,7 @@ Types (Classes, Enums, Structs, Interface, Delegates)
 Access Modifiers: they change the behavior and scope of the types or types members.
     - Scopes Modifiers : Private, public, internal, protected, protected internal and private protected
         - Using Scope modifiers encapsulation is achieved
-    - Extended Modifiers : abstract, virtual, sealed, static, partial, const, readonly, async and await
+    - Extended Modifiers : abstract, virtual, sealed, static, partial, const, readonly, out, ref, async and await
 
 Properties: like getters and setters in java. Microsoft calls them as smart fields to encapsulate the value of private variables.
 
@@ -108,7 +108,6 @@ Collections: In memory Storage of data
         - Type-safe classes 
         - Memory efficient - as they grow when items added and shrink when items removed
 
-<<<<<<< HEAD
 Delegates: type-safe functions pointers in C#.
     - Late Bindings
     - Method Chaining - creating pipeline and lifecycle of a framework
@@ -142,4 +141,10 @@ int param = 0;
 call method(param);
 
 method(ref int param);
->>>>>>> 9130b4fd0ee9ca7cdbef26af1bf246ec3fa9c47e
+
+---------------------------------
+C# Object                   XML                       JSON
+class Person{              <Person>                   {
+    int id = 1;                 <id>1</id>              "id":1,
+    string name="Fred";         <name>Fred</name>       "name":"Fred"
+}                           </Person>                 }
