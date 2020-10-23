@@ -94,8 +94,13 @@ namespace HerosUI
         // result();
             #endregion 
             #region Asynchronous vs Synchronous programming
+            /// Subcribing to publisher
+            heroTasks.workDone += EmailService.SendEmail;
+            heroTasks.workDone += TextMessageService.SendText;
+            heroTasks.workDone += PushNotification.SendPushNotification;
             heroTasks.DoWork();
             heroTasks.ManageLife();
+            Console.Read();// Holds the screen until a key pressed
             #endregion
          }
     }

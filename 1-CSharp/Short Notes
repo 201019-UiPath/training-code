@@ -112,7 +112,7 @@ Delegates: type-safe functions pointers in C#.
     - Late Bindings
     - Method Chaining - creating pipeline and lifecycle of a framework
     - Anonymous Methods- they are also foundation of Lambda exp.
-    - Events
+    - Events - publisher and subscriber model/pattern
     - Loose coupling
 Types 
     - Single-Cast
@@ -129,6 +129,14 @@ Delegate Demo 1-
         HeroTask:IHeroOperations,IHeroSuperPowers
     HerosUI
         Make call to operations using delegate
+
+
+Events Demo
+HeroTask.cs 
+    Event -> Publisher
+Email services  -> subscriber 1
+Social media services -> subscriber 2
+Text message Service -> subscriber 3
 =======
 Passing by reference
 int param;
