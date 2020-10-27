@@ -34,7 +34,7 @@ namespace HeroUI
                     break;
                 }
 
-            }while(!userInput.Equals("2"));
+            }while(!(userInput.Equals("2")));
         }
     }
 }
