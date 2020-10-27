@@ -6,10 +6,9 @@ namespace HeroUI
     public class MainMenu : IMenu
     {
         private string userInput;
-        private HerosContext context = new HerosContext();
         private HeroMenu heroMenu;        
         private VillainMenu villainMenu;
-        public MainMenu()
+        public MainMenu(HerosContext context)
         {
             this.heroMenu = new HeroMenu(new DBRepo(context), new MessagingService());
             this.villainMenu = new VillainMenu(new DBRepo(context), new MessagingService());
@@ -34,7 +33,6 @@ namespace HeroUI
                         break;
                     case "2":
                         Console.WriteLine("Goodbye Friend");
-                        Environment.Exit(0);
                         break;
                     default:
                     //call the invalid message
