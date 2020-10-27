@@ -44,6 +44,10 @@ namespace HeroUI
                         foreach (var hero in heroService.GetAllHeroes())
                         {
                             Console.WriteLine($"Hero: \n\tHero Alias: {hero.Alias} \n\tHero Real Name: {hero.RealName} \n\tHero Hideout: {hero.HideOut}");
+                            foreach (var power in hero.SuperPowers)
+                            {
+                                Console.WriteLine($"\tSuper Powers:\n\t\tName: {power.Name}\n\t\tDescription: {power.Description}");
+                            }
                         }                   
                         break;
                     case "2":
@@ -53,9 +57,7 @@ namespace HeroUI
                         Console.WriteLine("Press <enter>");
                         break;
                     case "3":
-                        //call the main menu
-                        MainMenu main = new MainMenu();
-                        main.start();
+                        Console.WriteLine("Going back to main");
                         break;
                     default:
                         //invalid input message;
