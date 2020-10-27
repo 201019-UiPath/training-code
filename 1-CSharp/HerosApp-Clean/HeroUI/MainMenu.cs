@@ -33,7 +33,7 @@ namespace HeroUI
                     //call the invalid message
                     break;
                 }
-
+                
             }while(!(userInput.Equals("2")));
         }
     }
