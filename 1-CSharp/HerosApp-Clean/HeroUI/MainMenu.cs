@@ -1,11 +1,13 @@
 using System;
 using HerosDB;
+using HerosLib;
 namespace HeroUI
 {
     public class MainMenu : IMenu
     {
         private string userInput;
         private HeroMenu heroMenu = new HeroMenu(new FileRepo(), new MessagingService());
+        private VillainMenu villainMenu= new VillainMenu(new FileRepo(), new MessagingService());
         public void start()
         {
             do{
@@ -22,6 +24,7 @@ namespace HeroUI
                         break;
                     case "1":
                         //call the villain menu;
+                        villainMenu.start();
                         break;
                     case "2":
                         Console.WriteLine("Goodbye Friend");
