@@ -22,7 +22,7 @@ namespace HerosLib
         {
             return repo.GetAllVillains();
         }
-        public SuperHero GetHeroByName()
+        public SuperVillain GetVillainByName()
         {
             throw new NotImplementedException();
         }
