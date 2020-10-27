@@ -24,5 +24,17 @@ namespace HerosDB
                 optionsBuilder.UseNpgsql(connectionString);
             }
         }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<SuperEnemy>()
+            .HasOne(e => e.SuperHero)
+            .WithMany(hero => hero.Nemesis)
+            .HasForeignKey(e => e.SuperHeroId);
+
+            modelBuilder.Entity<SuperEnemy>()
+            .HasOne(e => e.SuperVillain)
+            .WithMany(v => v.Nemesis)
+            .HasForeignKey(e => e.SuperVillainId);
+        }
     }
 }
