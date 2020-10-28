@@ -1,0 +1,39 @@
+--1. Add 5 associates to the associate table
+insert into associates (associateName, associateState) values
+('Thor', 'CA'),
+('Thor', 'NY'),
+('Spiderman', 'MN'),
+('Deadpool', 'SC'),
+('Batman', 'TX'),
+('Potato', 'AZ');
+
+--2. Get all associates that live in a certain state
+select * from associates where associateState = 'SC';
+
+--3. Get the number of associates living in the various states
+    -- Give the number in descending and ascending order
+select count(associateName), associateState from associates group by associateState order by count(associateName) asc;
+select count(associateName), associateState from associates group by associateState order by count(associateName) desc;
+	
+--4. Use joins, set operations, and subqueries to:
+    -- Get all trainers without associates
+select trainers.trainerName 
+from trainers full outer join batch on batch.trainerID = trainers.id 
+where batch.associateID is null; 
+
+ 	-- Get all the associates mapped to a trainer
+select associates.associateName, batch.trainerID from associates 
+inner join batch on associates.id = batch.associateID where batch.trainerID is not null;
+
+select associates.associateName, batch.trainerID from associates 
+inner join batch on associates.id = batch.associateID 
+inner join 
+where batch.trainerID is not null;
+
+	-- Get all associates without a trainer
+select associates.associateName, associates.id, batch.associateID 
+from associates full outer join batch on batch.associateID = associates.id 
+where batch.trainerID is null;
+
+
+
