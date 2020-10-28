@@ -1,4 +1,4 @@
---drop table batch
+--drop table batch;
 --drop table trainers;
 --drop table associates;
 create table associates
