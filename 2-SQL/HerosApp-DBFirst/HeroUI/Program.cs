@@ -8,7 +8,7 @@ namespace HeroUI
         static void Main(string[] args)
         {
             Data db=new Data();
-            db.GetSuperPersonConnected();
+            db.GetSuperPersonDisConnected();
             /*IMenu main = new MainMenu(new HeroContext(), new DBMapper());
             main.start();*/
         }
