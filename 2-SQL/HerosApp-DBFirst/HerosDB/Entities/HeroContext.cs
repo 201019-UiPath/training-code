@@ -32,7 +32,7 @@ namespace HerosDB.Entities
                 .AddJsonFile("appsettings.json")
                 .Build();
 
-                var connectionString = configuration.GetConnectionString("HeroDB");
+                var connectionString = configuration.GetConnectionString("HerosDB");
                 optionsBuilder.UseNpgsql(connectionString);
             }
         }
