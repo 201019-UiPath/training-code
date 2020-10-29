@@ -1,13 +1,16 @@
 ﻿using HerosDB.Entities;
 using HerosDB;
+using HerosDbWithADO;
 namespace HeroUI
 {
     class Program
     {
         static void Main(string[] args)
         {
-            IMenu main = new MainMenu(new HeroContext(), new DBMapper());
-            main.start();
+            Data db=new Data();
+            db.GetSuperPersonConnected();
+            /*IMenu main = new MainMenu(new HeroContext(), new DBMapper());
+            main.start();*/
         }
 
     }

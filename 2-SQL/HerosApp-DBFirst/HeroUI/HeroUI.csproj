@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\HerosLib\HerosLib.csproj" />
     <ProjectReference Include="..\HerosDB\HerosDB.csproj" />
+    <ProjectReference Include="..\HerosDbWithADO\HerosDbWithADO.csproj" />
   </ItemGroup>
 
   <ItemGroup>
