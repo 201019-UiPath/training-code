@@ -8,10 +8,10 @@ namespace HeroUI
         private string userInput;
         private HeroMenu heroMenu;        
         private VillainMenu villainMenu;
-        public MainMenu(HerosContext context)
+        public MainMenu()
         {
-            this.heroMenu = new HeroMenu(new DBRepo(context), new MessagingService());
-            this.villainMenu = new VillainMenu(new DBRepo(context), new MessagingService());
+            this.heroMenu = new HeroMenu(new FileRepo(), new MessagingService());
+            this.villainMenu = new VillainMenu(new FileRepo(), new MessagingService());
         }
         public void start()
         {

@@ -9,7 +9,7 @@ namespace HeroUI
     {
         static void Main(string[] args)
         {
-            IMenu main = new MainMenu(new HerosContext());
+            IMenu main = new MainMenu();
             main.start();
         }
 
