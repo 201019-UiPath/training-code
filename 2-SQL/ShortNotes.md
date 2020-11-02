@@ -65,9 +65,9 @@ Other things you'll need with DBFirst:
 2. Implement a DbContext
     - Override the `OnConfiguring` method to point to the connection string stored in your appsettings.json
     - Override the `OnModelCreating` method to manually map some relationships EF Core complains about
-3. Run the migration code
+3. Run the migration code in the DL project
     - `dotnet ef migrations add NameOfMigration -c DbContext --startup-project <relative path to project file>`
-4. Update your DB
+4. Update your DB in the DL project
     - `dotnet ef database update --startup-project <relative path to project file>`
 5. Any changes to your models/entities go to step 3
 
