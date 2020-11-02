@@ -16,8 +16,17 @@ namespace HerosLib
         }
         public void AddHero(SuperHero newHero)
         {
-            //Add some business logic here
+            //Making sure aliases are unique before adding
+            Task<List<SuperHero>> getHerosTask = repo.GetAllHeroesAsync();
+            foreach(var hero in getHerosTask.Result)
+            {
+                if(newHero.Alias.Equals(hero.Alias))
+                {
+                    throw new Exception("Hero aliases should be unique. That superhero already exists in our db");
+                }
+            }
             repo.AddAHeroAsync(newHero);
+
         }
         public List<SuperHero> GetAllHeroes()
         {

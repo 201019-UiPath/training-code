@@ -37,7 +37,13 @@ namespace HeroUI
                         //call create a hero, get hero details
                         SuperHero newSuperHero = GetHeroDetails();
                         //call the business logic and the repo
-                        heroService.AddHero(newSuperHero);
+                        try{
+                            heroService.AddHero(newSuperHero);
+                        } catch (Exception ex)
+                        {
+                            Console.WriteLine(ex.Message);
+                            continue;
+                        }
                         break;
                     case "1":
                         //call get all heros    

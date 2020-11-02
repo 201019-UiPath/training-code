@@ -7,10 +7,10 @@ namespace HeroUI
     {
         static void Main(string[] args)
         {
-            Data db=new Data();
-            db.GetSuperPersonDisConnected();
-            /*IMenu main = new MainMenu(new HeroContext(), new DBMapper());
-            main.start();*/
+            // Data db=new Data();
+            // db.GetSuperPersonDisConnected();
+            IMenu main = new MainMenu(new HeroContext(), new DBMapper());
+            main.start();
         }
 
     }
