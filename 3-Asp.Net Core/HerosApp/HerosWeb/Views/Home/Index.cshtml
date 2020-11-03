@@ -1,7 +1,15 @@
-﻿@{
+﻿@model SuperHero
+@{
     ViewData["Title"] = "Home Page";
+    //var hero = ViewData["SuperHeroName"] as SuperHero;
+    //var hero = ViewBag.SuperHeroName;
 }
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Heros App</h1>
+    <p>Super hero id :@Model.Id </p>
+    <p>Super hero name :@Model.alias </p>
 </div>
+@section extraitems{
+<p>@Model.Id - @Model.name </p>
+}

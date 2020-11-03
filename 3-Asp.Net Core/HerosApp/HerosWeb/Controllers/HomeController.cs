@@ -20,7 +20,10 @@ namespace HerosWeb.Controllers
 
         public IActionResult Index()
         {
-            return View();
+            SuperHero hero = new SuperHero() { Id = 1, alias = "Thor", name = "Thor" };
+            //ViewData["SuperHeroName"] = hero;
+            //ViewBag.SuperHeroName = hero;
+            return View(hero);
         }
 
         public IActionResult Privacy()
