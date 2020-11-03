@@ -13,7 +13,7 @@
 - **Models**: That contains structure of the data, its validation and business logic for that data.
 - **Views**: UI logic 
 - **Controllers**: the component which handles users request.
-- ![MVC lifecycle diagram]()
+- ![MVC lifecycle diagram](https://github.com/201019-UiPath/training-code/blob/main/images/MVC%20lifecycle%20-%20brief.png)
 
 ### .Net Core -> Asp.Net Core 
 - Asp.Net Core MVC app: Web application with UI
