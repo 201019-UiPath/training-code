@@ -14392,6 +14392,11 @@
   "RootNamespace": "HerosWeb",
   "Documents": [
     {
+      "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\SuperHero\\GetHerosByName.cshtml",
+      "TargetPath": "Views\\SuperHero\\GetHerosByName.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\Home\\About.cshtml",
       "TargetPath": "Views\\Home\\About.cshtml",
       "FileKind": "mvc"

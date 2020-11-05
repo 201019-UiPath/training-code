@@ -8,7 +8,9 @@ namespace HerosWeb.Models
     public class SuperHero
     {
         public int Id { get; set; }
-        public string name { get; set; }
-        public string alias { get; set; }
+        public string RealName { get; set; }
+        public string Alias { get; set; }
+        public string HideOut { get; set; }
+        public List<SuperPower> SuperPowers { get; set; }
     }
 }
