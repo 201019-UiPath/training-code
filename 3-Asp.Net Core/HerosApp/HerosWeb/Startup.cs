@@ -56,7 +56,7 @@ namespace HerosWeb
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=SuperHero}/{action=Index}/{id?}");
+                    pattern: "{controller=SuperHero}/{action=GetHeros}/{id?}");
             });
         }
     }

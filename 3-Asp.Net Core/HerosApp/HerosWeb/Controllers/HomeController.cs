@@ -29,7 +29,7 @@ namespace HerosWeb.Controllers
             return View();
         }
         [HttpGet]
-        [Route("{Controller=Home}")]
+       // [Route("{Controller=Home}")]
         public IActionResult About()
         {
             return View();

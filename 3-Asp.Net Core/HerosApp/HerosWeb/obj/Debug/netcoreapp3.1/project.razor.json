@@ -14412,6 +14412,16 @@
       "FileKind": "mvc"
     },
     {
+      "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\SuperHero\\AddHero.cshtml",
+      "TargetPath": "Views\\SuperHero\\AddHero.cshtml",
+      "FileKind": "mvc"
+    },
+    {
+      "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\SuperHero\\GetHeros.cshtml",
+      "TargetPath": "Views\\SuperHero\\GetHeros.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\Shared\\_DateTimePartial.cshtml",
       "TargetPath": "Views\\Shared\\_DateTimePartial.cshtml",
       "FileKind": "mvc"
@@ -14429,11 +14439,6 @@
     {
       "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
       "TargetPath": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
-      "FileKind": "mvc"
-    },
-    {
-      "FilePath": "c:\\Revature\\201019-Uta-UiPath\\training-code\\3-Asp.Net Core\\HerosApp\\HerosWeb\\Views\\SuperHero\\Index.cshtml",
-      "TargetPath": "Views\\SuperHero\\Index.cshtml",
       "FileKind": "mvc"
     },
     {

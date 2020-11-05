@@ -20,7 +20,7 @@ namespace HerosDB
         public void AddAHeroAsync(SuperHero hero)
         {
             context.Superpeople.AddAsync(mapper.ParseSuperHero(hero));
-            context.SaveChangesAsync();
+            context.SaveChanges();
         }
 
         public void AddAVillain(SuperVillain superVillain)

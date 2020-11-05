@@ -97,6 +97,24 @@
 - Routing can be done in 2 ways:
     1. Conventional based Routing - globally defining of the routes
     2. Attribute based Routing - Routes for Controller and action methods
-    
+
+## Lifetime of the context
+- there are built in IoC containers that manages the lifetime of a registered service (Context)
+    - Singleton - service will be available through out the lifetime of the application
+    - Transient - it will create a new instance of the the specified service type every time you ask for it.
+    - Scoped - it will create the instance of the specified service once per request and it will be shared in a single request.
+
+
+## Helpers in MVC Views
+- There are 2 types of helpers which can be used to generate the html at runtime by razor engine
+    - HTML Helpers: C# methods which create the HTML at run time
+    - Tag Helpers: which are more like mark ups and HTML friendly syntaxes
+
+## Validations:
+- To check the user's input at client side as well as Server side we use validations
+- Data Annotations: Can be used to:
+    - perform client side validations using annotations like StringLength/Range,RegularExpression, Required
+    - Display Views : Datatype, Display Name
+    - Mention schema logic: Key, Foreign Key, DataType
 ## references 
 - [Practise](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/)

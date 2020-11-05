@@ -19,14 +19,28 @@ namespace HerosDB
 
         public Superpeople ParseSuperHero(SuperHero hero)
         {
-            return new Superpeople()
+            if (hero.SuperPowers != null)
             {
-                Realname = hero.RealName,
-                Workname = hero.Alias,
-                Hideout = hero.HideOut,
-                Powers = ParseSuperPower(hero.SuperPowers),
-                Chartype = 1
-            };
+                return new Superpeople()
+                {
+                    Realname = hero.RealName,
+                    Workname = hero.Alias,
+                    Hideout = hero.HideOut,
+                    Powers = ParseSuperPower(hero.SuperPowers),
+                    Chartype = 1
+                };
+            }
+            else
+            {
+                return new Superpeople()
+                {
+                    Realname = hero.RealName,
+                    Workname = hero.Alias,
+                    Hideout = hero.HideOut,
+                    Chartype = 1
+                };
+            }
+
         }
 
         public List<SuperHero> ParseSuperHero(List<Superpeople> hero)
@@ -51,9 +65,9 @@ namespace HerosDB
         {
             ICollection<Powers> powers = new List<Powers>();
             foreach (var sp in superPower)
-            {
-                powers.Add(ParseSuperPower(sp));
-            }
+                {
+                    powers.Add(ParseSuperPower(sp));
+                }
             return powers;
         }
 
