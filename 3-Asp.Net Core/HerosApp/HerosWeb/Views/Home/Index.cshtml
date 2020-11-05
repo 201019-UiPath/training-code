@@ -7,9 +7,11 @@
 
 <div class="text-center">
     <h1 class="display-4">Welcome to Heros App</h1>
-    <p>Super hero id :@Model.Id </p>
-    <p>Super hero name :@Model.alias </p>
+    <p>Super hero id :@ViewBag.id </p>
+    <p>Super hero name :@ViewBag.name </p>
 </div>
-@section extraitems{
+@*@section extraitems{
 <p>@Model.Id - @Model.name </p>
-}
+}*@
+@Html.Partial("_DateTimePartial")
+@*<partial name="_DateTimePartial"></partial>*@

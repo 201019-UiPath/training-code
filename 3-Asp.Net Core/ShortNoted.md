@@ -26,7 +26,10 @@
 - **Hosts**: 
     - IIS - Microsoft's server, Windows only
     - Kestrel - platform independant. Can be used in macOS, Linux, Windows
-    - HTTPS
+    - HTTP.sys
+    - Nginx
+    - Apache
+    - Docker
 
 ### Controllers
 - Handles all user interaction
@@ -54,6 +57,7 @@
         - TempData:
             - ViewBag and ViewData can only pass values from controller actions to View but cannot pass it from one controller to another.
             - TempData can pass the value from one controller to another allowing atleast 1 time read.
+            - TempData.Keep() -> this method will preserve the value of TempData for next read.
     - Strongly-typed
         - by using Models in the views which are called view-models
         - 1 view is tied to only 1 model
@@ -74,8 +78,25 @@
     - Strongly-Typed
     - Dynamic-Typed
     - Layout View - implement the principle Donot Repeat Yourself
-    - Partial Views
+        - RenderBody()- placeholder for all the views
+        - RenderSection() - a placeholder for view specific data
+    - Partial Views - 
 
+### Model Binding
+- It is a mechanism which allows the binding of values of parameters action methods from different locations of that data:
+    - RouteData
+    - FormCollection
+    - QueryString
+    - File
 
+### Routing 
+- mechanism to implement powerful and meaningful URLs and its mapping
+- It is Performed by Routing Engine
+- A routing engine has a route table which maintains the repository of the the patterns, controller, actions and its parameters.
+- Link generation independant of the file structure of webserver.
+- Routing can be done in 2 ways:
+    1. Conventional based Routing - globally defining of the routes
+    2. Attribute based Routing - Routes for Controller and action methods
+    
 ## references 
 - [Practise](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/)

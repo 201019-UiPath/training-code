@@ -18,14 +18,22 @@ namespace HerosWeb.Controllers
             _logger = logger;
         }
 
-        public IActionResult Index()
+        public IActionResult Index(int id=0, string name="Avengers")// default parameters
         {
-            SuperHero hero = new SuperHero() { Id = 1, alias = "Thor", name = "Thor" };
+            //SuperHero hero = new SuperHero() { Id = 1, alias = "Thor", name = "Thor" };
             //ViewData["SuperHeroName"] = hero;
             //ViewBag.SuperHeroName = hero;
-            return View(hero);
+            //return View(hero);
+            ViewBag.id = id;
+            ViewBag.name = name;
+            return View();
         }
-
+        [HttpGet]
+        [Route("{Controller=Home}")]
+        public IActionResult About()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

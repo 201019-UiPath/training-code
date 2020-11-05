@@ -109,3 +109,5 @@ C:\Revature\201019-Uta-UiPath\training-code\3-Asp.Net Core\HerosApp\HerosWeb\bin
 C:\Revature\201019-Uta-UiPath\training-code\3-Asp.Net Core\HerosApp\HerosWeb\obj\Debug\netcoreapp3.1\HerosWeb.csproj.CoreCompileInputs.cache
 C:\Revature\201019-Uta-UiPath\training-code\3-Asp.Net Core\HerosApp\HerosWeb\obj\Debug\netcoreapp3.1\HerosWeb.MvcApplicationPartsAssemblyInfo.cache
 C:\Revature\201019-Uta-UiPath\training-code\3-Asp.Net Core\HerosApp\HerosWeb\obj\Debug\netcoreapp3.1\Razor\Views\SuperHero\Index.cshtml.g.cs
+C:\Revature\201019-Uta-UiPath\training-code\3-Asp.Net Core\HerosApp\HerosWeb\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_DateTimePartial.cshtml.g.cs
+C:\Revature\201019-Uta-UiPath\training-code\3-Asp.Net Core\HerosApp\HerosWeb\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
