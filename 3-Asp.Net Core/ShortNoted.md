@@ -117,14 +117,48 @@
     - Display Views : Datatype, Display Name
     - Mention schema logic: Key, Foreign Key, DataType
 
+## SOA - Service Oriented Architecture
+- Architectural Approach in which appliactions make use of services available in the network. Two components of services are
+    - Service Provider
+    - Service Consumer
+- Both the components interact with each other via *Messages* (text/json/xml) over a *Protocol* (TCP, MSMQ, HTTP(s), named Pipes).
+- **Principles of SOA**
+    - Standardized Service Contract: A service should have a service description document. Eg: [Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-3.1&tabs=visual-studio) for REST Apis, and [WSDL](https://www.tutorialspoint.com/wsdl/wsdl_introduction.htm) for SOAP services.
+    - Loose Coupling: each service should be designed in a way that it is self contained component and has minimal dependencies on other services.
+    - Abstraction: Need not to expose the Service internal logic but it should be defined by its description document and the Service contract.
+    - Reusability 
+    - Autonomy: Services are encapsulated in terms of logic and consumer don't need to know about the implementation.
+    - Discoverablity
+    - Composablity: Using services as building blocks, sophisticated and complex operations.
+- Advantages of SOA: Service Resuablity, Easy maintainance, Platform independance, Availibilty, reliability, Scalibilty
+- Disadvantages of SOA: load balancing, High costs and investments involved, High Overload could also because of network latency
+- SOA can be impleneted in 2 ways:
+    - SOAP Service-> a web service which uses XML format when it comes to exchanging of messages over various protocols (Http(s), TCP, MSMQ, named Pipes).
+    - In .Net Framework use WCF (Windows Communication Foundation)
+        - Communication between consumer and provider happens on SOAP Packet (XML data)
+        - WCF Contracts:
+            - Service Contract
+                - Operation Contract
+            - Data Contract
+                - Data Memeber
+            - Fault Contract
+            
+    - RESTFul Service-> Asp.Net core web API
+- **Why industries prefer REST over SOAP service**
+    - Light weight messaging using Json.
+    - Easy setup and extend for REST over SOAP service.
+    - Statelessness of RESTful service is helpful in scalability
+    - Reachability because of HTTP as we have more devices supporting HTTP.
+
 ## ASP.Net Core Web API 
 - [Content Negiotiation](https://docs.microsoft.com/en-us/aspnet/core/web-api/advanced/formatting?view=aspnetcore-3.1): Whenever client request for a format of data using *Accept* header, this is called content Negotiation.
 - By Default Asp.Net core offers Json data unless configured.
 - Some browsers also have default accept header like edge and IE requests for JSON.
 - Or use Formatter ciustom or default
 
+
 ## How can you consume an Asp.Net Web API
-1. Client-side -> using JS or any frameworks based on client-scripting language\
+1. Client-side -> using JS or any frameworks based on client-scripting language
 2. Server-side -> HttpClient
 
 ## references 
