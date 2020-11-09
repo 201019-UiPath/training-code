@@ -121,6 +121,7 @@
 - Architectural Approach in which appliactions make use of services available in the network. Two components of services are
     - Service Provider
     - Service Consumer
+    - ![Image of Service](https://github.com/201019-UiPath/training-code/blob/main/images/Service.png)
 - Both the components interact with each other via *Messages* (text/json/xml) over a *Protocol* (TCP, MSMQ, HTTP(s), named Pipes).
 - **Principles of SOA**
     - Standardized Service Contract: A service should have a service description document. Eg: [Swagger](https://docs.microsoft.com/en-us/aspnet/core/tutorials/getting-started-with-swashbuckle?view=aspnetcore-3.1&tabs=visual-studio) for REST Apis, and [WSDL](https://www.tutorialspoint.com/wsdl/wsdl_introduction.htm) for SOAP services.
@@ -130,11 +131,12 @@
     - Autonomy: Services are encapsulated in terms of logic and consumer don't need to know about the implementation.
     - Discoverablity
     - Composablity: Using services as building blocks, sophisticated and complex operations.
+    - ![Image for SOA](https://github.com/201019-UiPath/training-code/blob/main/images/SOA.png)
 - Advantages of SOA: Service Resuablity, Easy maintainance, Platform independance, Availibilty, reliability, Scalibilty
 - Disadvantages of SOA: load balancing, High costs and investments involved, High Overload could also because of network latency
 - SOA can be impleneted in 2 ways:
     - SOAP Service-> a web service which uses XML format when it comes to exchanging of messages over various protocols (Http(s), TCP, MSMQ, named Pipes).
-    - In .Net Framework use WCF (Windows Communication Foundation)
+    - In .Net Framework use [WCF](https://www.tutorialspoint.com/wcf/wcf_architecture.htm) (Windows Communication Foundation)
         - Communication between consumer and provider happens on SOAP Packet (XML data)
         - WCF Contracts:
             - Service Contract
@@ -142,7 +144,7 @@
             - Data Contract
                 - Data Memeber
             - Fault Contract
-            
+        - Consume a [SOAP Service](https://www.c-sharpcorner.com/article/calling-web-service-using-soap-request/) 
     - RESTFul Service-> Asp.Net core web API
 - **Why industries prefer REST over SOAP service**
     - Light weight messaging using Json.
