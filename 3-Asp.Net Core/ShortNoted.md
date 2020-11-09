@@ -116,5 +116,16 @@
     - perform client side validations using annotations like StringLength/Range,RegularExpression, Required
     - Display Views : Datatype, Display Name
     - Mention schema logic: Key, Foreign Key, DataType
+
+## ASP.Net Core Web API 
+- [Content Negiotiation](https://docs.microsoft.com/en-us/aspnet/core/web-api/advanced/formatting?view=aspnetcore-3.1): Whenever client request for a format of data using *Accept* header, this is called content Negotiation.
+- By Default Asp.Net core offers Json data unless configured.
+- Some browsers also have default accept header like edge and IE requests for JSON.
+- Or use Formatter ciustom or default
+
+## How can you consume an Asp.Net Web API
+1. Client-side -> using JS or any frameworks based on client-scripting language\
+2. Server-side -> HttpClient
+
 ## references 
 - [Practise](https://docs.microsoft.com/en-us/learn/modules/build-web-api-net-core/)
