@@ -29,7 +29,7 @@ namespace HerosAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddXmlSerializerFormatters();
             services.AddDbContext<HeroContext>(options => options.UseNpgsql(Configuration.GetConnectionString("HerosDB")));
             services.AddScoped<IHeroService, HeroService>();
             services.AddScoped<ISuperHeroRepo, DBRepo>();

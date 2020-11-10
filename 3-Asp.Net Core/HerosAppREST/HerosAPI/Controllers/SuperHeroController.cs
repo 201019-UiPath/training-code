@@ -15,9 +15,14 @@ namespace HerosAPI.Controllers
         {
             _heroService = heroService;
         }
-
+        /*[HttpGet("get")]
+        public string Get()
+        {
+            return "Hello World";
+        }*/
         [HttpGet("get")]
         [Produces("application/json")]
+        //[FormatFilter]
         public IActionResult GetAllHeroes()
         {
             try
@@ -32,6 +37,7 @@ namespace HerosAPI.Controllers
 
         [HttpGet("get/{name}")]
         [Produces("application/json")]
+        //[FormatFilter]
         public IActionResult GetHeroByName(string name)
         {
             try
