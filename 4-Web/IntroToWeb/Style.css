@@ -1,0 +1,23 @@
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+li {
+    font-family: monospace;
+}
+#id{
+    color: #6699cc;
+}
+.pseudo:hover {
+    font-family: cursive;
+    background-color: aliceblue;
+}
+#pel::first-letter{
+    font-size: x-large;
+}
+#id, div{
+    margin-top: 0px;
+}
+header{
+    margin-top: 10px;
+    font-weight: bold;
+}
