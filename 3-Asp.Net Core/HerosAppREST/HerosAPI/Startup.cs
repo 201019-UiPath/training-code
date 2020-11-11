@@ -33,7 +33,7 @@ namespace HerosAPI
             services.AddCors(options=> {
                 options.AddPolicy(name:MyAllowSpecificOrigins,
                     builder => {
-                        builder.WithOrigins("file:///*")
+                        builder.WithOrigins("http://127.0.0.1:5500")
                         .AllowAnyMethod()
                         .AllowAnyHeader();
                     });

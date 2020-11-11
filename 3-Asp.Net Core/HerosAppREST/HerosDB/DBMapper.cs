@@ -19,6 +19,16 @@ namespace HerosDB
 
         public Superpeople ParseSuperHero(SuperHero hero)
         {
+            if(hero.SuperPowers == null)
+            {
+                return new Superpeople()
+                {
+                    Realname = hero.RealName,
+                    Workname = hero.Alias,
+                    Hideout = hero.HideOut,
+                    Chartype = 1
+                };
+            }
             return new Superpeople()
             {
                 Realname = hero.RealName,
@@ -27,6 +37,7 @@ namespace HerosDB
                 Powers = ParseSuperPower(hero.SuperPowers),
                 Chartype = 1
             };
+
         }
 
         public List<SuperHero> ParseSuperHero(List<Superpeople> hero)
