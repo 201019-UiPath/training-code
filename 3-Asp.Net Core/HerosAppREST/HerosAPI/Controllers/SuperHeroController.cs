@@ -1,5 +1,6 @@
 ﻿using HerosDB.Models;
 using HerosLib;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using System;
 
@@ -22,6 +23,7 @@ namespace HerosAPI.Controllers
         }*/
         [HttpGet("get")]
         [Produces("application/json")]
+        [EnableCors("_myAllowSpecificOrigins")]
         //[FormatFilter]
         public IActionResult GetAllHeroes()
         {
@@ -37,6 +39,7 @@ namespace HerosAPI.Controllers
 
         [HttpGet("get/{name}")]
         [Produces("application/json")]
+        [EnableCors("_myAllowSpecificOrigins")]
         //[FormatFilter]
         public IActionResult GetHeroByName(string name)
         {

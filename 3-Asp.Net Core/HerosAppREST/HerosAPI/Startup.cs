@@ -19,6 +19,7 @@ namespace HerosAPI
 {
     public class Startup
     {
+        readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -29,11 +30,20 @@ namespace HerosAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options=> {
+                options.AddPolicy(name:MyAllowSpecificOrigins,
+                    builder => {
+                        builder.WithOrigins("file:///*")
+                        .AllowAnyMethod()
+                        .AllowAnyHeader();
+                    });
+            });
             services.AddControllers().AddXmlSerializerFormatters();
             services.AddDbContext<HeroContext>(options => options.UseNpgsql(Configuration.GetConnectionString("HerosDB")));
             services.AddScoped<IHeroService, HeroService>();
             services.AddScoped<ISuperHeroRepo, DBRepo>();
             services.AddScoped<IMapper, DBMapper>();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -47,6 +57,7 @@ namespace HerosAPI
             app.UseHttpsRedirection();
 
             app.UseRouting();
+            app.UseCors(MyAllowSpecificOrigins);
 
             app.UseAuthorization();
 

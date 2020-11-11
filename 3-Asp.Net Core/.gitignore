@@ -147,6 +147,8 @@ DocProject/Help/html
 
 # Click-Once directory
 publish/
+PublishProfiles/
+ServiceDependencies/
 
 # Publish Web Output
 *.[Pp]ublish.xml
