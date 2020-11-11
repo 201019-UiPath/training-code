@@ -32,3 +32,20 @@ function GetPokemon()
     //Sends the request, has an optional parameter of request body data
     xhr.send();
 }
+function GetDigimon()
+{
+    let digiName = document.querySelector('#digimonInput').value;
+    //Simplest form takes in the URL you'll be querying, you can add additional request initializations in an object as a second parameter
+    //returns a promise, you convert the response to json (which returns a promise), 
+    //then you take the converted response and update your page
+    fetch(`https://digimon-api.vercel.app/api/digimon/name/${digiName}`)
+    .then(response => response.json())
+    .then(result => {
+        document.querySelector('.digimonResult img').setAttribute('src', result[0].img);
+        document.querySelectorAll('.digimonResult caption').forEach((element) => element.remove());
+        let caption = document.createElement('caption');
+        caption.appendChild(document.createTextNode(result[0].name));
+        document.querySelector('.digimonResult').appendChild(caption);
+        document.querySelector('#digimonInput').value = '';
+    });
+}

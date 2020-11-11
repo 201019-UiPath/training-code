@@ -10,7 +10,7 @@
 <body>
     <div class="container">
         <h1>AJAX demo</h1>
-        <form action="">
+        <form>
             <div class="form-group">
                 <input type="text" class="form-control" placeholder="Enter Pokemon name or ID" id ="pokemonInput">
             </div>
@@ -19,6 +19,18 @@
         <!--Part of the html document i want to manipulate-->
         <div class="pokemonResult container">
             <img src=""/>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Fetch API demo</h1>
+        <form>
+            <div class="form-group">
+                <input type="text" class="form-control" id="digimonInput" placeholder="Enter Digimon Name">
+            </div>
+            <input type="button" value="Get Digimon" class="btn btn-warning" onclick="GetDigimon()">
+        </form>
+        <div class="digimonResult container">
+            <img src=''/>
         </div>
     </div>
 </body>
