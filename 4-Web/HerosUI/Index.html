@@ -7,7 +7,7 @@
     <script src="Index.js"></script>
     <title>Heroes Stable</title>
 </head>
-<body>  
+<body onload="GetAllHeroes()">  
     <h1 class="jumbotron">Welcome to the Heroes App!</h1>
     <div class="container">
         <form action="">
@@ -25,9 +25,6 @@
             </div>
             <input type="button" value="Add a hero" class="btn btn-warning" onclick="AddAHero()">
         </form>
-    </div>
-    <div class="container">
-        <input type="button" class="btn btn-info" value="Get all Heroes" onclick="GetAllHeroes()">
     </div>
     <div class="container">
         <table class="table" id="heroes">
