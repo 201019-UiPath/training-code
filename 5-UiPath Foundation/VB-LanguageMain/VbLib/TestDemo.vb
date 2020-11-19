@@ -8,6 +8,7 @@ Public Class TestDemo
         End If
     End Sub
     Public Function LoadFile() As List(Of String)
+        Dim a As Integer = 10
         Dim output As List(Of String) = New List(Of String)
         Dim lines As List(Of String) = File.ReadAllLines("C:\Revature\Text.txt").ToList()
         For i = 0 To lines.Count - 1

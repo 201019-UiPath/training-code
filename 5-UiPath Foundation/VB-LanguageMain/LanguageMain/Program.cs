@@ -6,6 +6,8 @@ namespace LanguageMain
     {
         static void Main(string[] args)
         {
+            int a = 10;
+            float b;
             CSharpLib.TestDemo testcsharp = new CSharpLib.TestDemo();
             testcsharp.GetFullName("Pushpinder","","Kaur");
             var resultsChsarp=testcsharp.LoadFile();
