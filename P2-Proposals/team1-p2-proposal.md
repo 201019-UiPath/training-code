@@ -2,16 +2,12 @@
 #### P2 Proposal - Shantel Chi, Shalei Kumar, Andres Siles-Loayza
 
 ##### Overview
-We want to create a robot that tracks how long we are on specific websites while we are on the browser. 
+We want to create a robot that tracks the time spent on different applications that are running on our machine. Using Task Manager we will log what applications are running. If one of the applications is the browser, then we want to also track which specific websites the user is on. An application is considered active if our mouse is detected on that application. We will log all the information on an Excel File where we will also calculate daily/weekly averages for each application.
 
-User can input websites they want to put a time limit on and our robot will alert the user when they exceed that limit.
+User can also input applications/websites they want to put a time limit on and our robot will alert the user when they exceed that limit.
 
-If time permits we would also like to track how much time is spent on other applications. 
-
-##### Applications
-* UiPath Studio
-* Chrome\FireFox\IE
-* Excel
+##### Why is this important?
+This robot can be used as a time management tool to help users limit time they spend on the computers. 
 
 ##### Process
 ![Process Flow Design](team1-p2-processflow.png)
