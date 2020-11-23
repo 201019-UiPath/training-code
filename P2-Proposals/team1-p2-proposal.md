@@ -11,3 +11,6 @@ This robot can be used as a time management tool to help users limit time they s
 
 ##### Process
 ![Process Flow Design](team1-p2-processflow.png)
+
+##### Supplementary Process: Adding to Browser Blocklist
+![Supplement](team1-p2-supplement-blocklist.png)
