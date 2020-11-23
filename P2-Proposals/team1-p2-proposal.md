@@ -14,4 +14,4 @@ If time permits we would also like to track how much time is spent on other appl
 * Excel
 
 ##### Process
-![Process Flow Design](/p2_process_flow.png)
+![Process Flow Design](/team1-p2-processflow.png)
