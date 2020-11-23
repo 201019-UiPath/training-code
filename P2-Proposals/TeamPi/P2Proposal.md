@@ -6,6 +6,7 @@ Our project will pull CDC data on coronavirus case counts by state, analyze and 
 ## Automation
 1. Prompt user input:
     * State/national data
+    * Zip code to search testing sites/telehealth centers, grocery stores, pharmacies
     * Graphs
     * Predictions
     * Email
@@ -14,7 +15,9 @@ Our project will pull CDC data on coronavirus case counts by state, analyze and 
 4. Data processing
 5. Generate graph with Python
 6. Generate ML prediction with Python
-7. Email user with case count data, graphs, predictions
+7. Search testing sites/telehealth centers near zip code on HRSA website
+8. Search grocery stores/pharmacies near zip code on Google
+9. Email user with case count data, graphs, predictions, health center locations, grocery stores/pharmacies
 
 ## Tech Stack
 * UiPath
