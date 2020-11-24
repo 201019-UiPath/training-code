@@ -10,4 +10,4 @@ We are automating the way we find new videogames. This project will be able to s
 - Create excel sheet of potential games from both stores
 - Fill in payment information and complete purchase
 
-[Process Flow Diagram](https://app.creately.com/diagram/eb7IAHt1KF4/view)
+![Process Flow Diagram](https://app.creately.com/diagram/eb7IAHt1KF4/view)
