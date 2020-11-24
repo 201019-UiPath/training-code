@@ -11,3 +11,6 @@ We are automating the way we find new videogames. This project will be able to s
 - Fill in payment information and complete purchase
 
 ![Process Flow Diagram](https://app.creately.com/diagram/eb7IAHt1KF4/view)
+
+#### Flowchart
+ <img src="Team3-GameGetter-Flowchart.png" height="100%" width="100%"/>
