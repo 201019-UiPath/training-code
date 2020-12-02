@@ -1,0 +1,6 @@
+{
+"url":"http://training.openspan.com/login",
+"file":"Orders.xlsx",
+"username":"pushpinder",
+"password":"pushpinder"
+}
