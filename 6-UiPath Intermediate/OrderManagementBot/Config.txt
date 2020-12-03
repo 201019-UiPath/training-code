@@ -1,6 +1,5 @@
 {
-"url":"http://training.openspan.com/login",
+"url":"url",
 "file":"Orders.xlsx",
-"username":"pushpinder",
-"password":"pushpinder"
+"credentials":"logincred"
 }
