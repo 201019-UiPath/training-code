@@ -1,0 +1,36 @@
+CRON Expressions:
+Cron is software utility to present in Unix like OS and used for time-based scheduling.
+Orchestrator uses https://www.quartz-scheduler.net/ as a framework
+Use Cron Expressions to give the time strings (6 or 7 characters)
+
+* * * ? * * this will run every sec
+
+* all acceptable unit
+- Range
+? no value
+L last unit
+W Weekday
+# given occurrence 
+
+Sec 0-59
+min 0-59
+hour 0-23
+day(of the month) 1-31
+month 1-12 or Jan-Dec
+day (of the week) 1-7 or Sun-Sat
+year (optional) 1970-2099
+
+Write Cron Expressions for 
+trigger every hour from 9:00am until 5:00pm on Mondays, Wednesdays, and Fridays.
+0 0 9-17 ? * 2,4,6 or 0 0 9-17 ? * Mon,Wed,Fri
+trigger every three hours, on Mondays, beginning at midnight.
+0 0 0/3 ? * 2 or 0 0 0/3 ? * Mon
+trigger at 11:59:59pm on the last day of each month
+59 59 23 L * ?
+
+trigger at midnight of the nearest weekday to the 15th, every month.
+which means if the 15th is a Saturday, it would trigger on Friday the 14th, whereas if the 15th is Sunday, it will trigger on Monday the 16th.
+0 0 0 15W * ?
+
+trigger at 5:00pm on the first Friday of every month
+0 0 17 ? * 6#1

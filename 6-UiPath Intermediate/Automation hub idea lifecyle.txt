@@ -1,0 +1,12 @@
+Stage         Actor/Role
+Idea	       Employee Idea Submitter
+Assessment     Idea Approver->Process Owner (Add Detailed Assessment)
+Qualification  Program Manager
+Analysis       BA (PDD)
+Solution-      Solution Architect/RPA Developer (SDD) 
+Design
+Development    Solution Architect + RPA developers (DSD, development, code reviews)
+Testing
+(Functional)   Testers, RPA Developer
+(UAT)	       Process Owner + RPA Developers + BA
+LIVE	       End Users

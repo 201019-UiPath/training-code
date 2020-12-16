@@ -78,7 +78,7 @@
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\humanizer.core/2.4.2\\lib/netstandard2.0/Humanizer.dll",
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\newtonsoft.json/11.0.2\\lib/net45/Newtonsoft.Json.dll",
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath/19.10.7452.28108\\lib/UiPath.Interop.dll",
-        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.ocr.contracts/2.2.1\\lib/net45/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll",
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.uiautomation.activities/19.11.3\\lib/net461/ActiproSoftware.DataGrid.Contrib.Wpf.dll",
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.uiautomation.activities/19.11.3\\lib/net461/ActiproSoftware.Docking.Wpf.dll",
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.uiautomation.activities/19.11.3\\lib/net461/ActiproSoftware.Editors.Wpf.dll",
@@ -118,6 +118,20 @@
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.webapi.activities/1.6.0\\lib/net452/UiPath.Web.Activities.dll",
         "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.webapi.activities/1.6.0\\lib/net452/UiPath.Web.dll"
       ]
+    },
+    {
+      "Package": {
+        "Id": "UiPath.PDF.Activities",
+        "Version": "3.3.0"
+      },
+      "Assemblies": [
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\bitmiracle.docotic.pdf/5.10.9957\\lib/net40/BitMiracle.Docotic.Pdf.dll",
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\system.valuetuple/4.5.0\\lib/net461/System.ValueTuple.dll",
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.ocr.contracts/2.7.1\\lib/net461/UiPath.OCR.Contracts.dll",
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.pdf.activities/3.3.0\\lib/net461/UiPath.PDF.Activities.Design.dll",
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.pdf.activities/3.3.0\\lib/net461/UiPath.PDF.Activities.dll",
+        "C:\\Users\\PushpinderKaur\\.nuget\\packages\\uipath.pdf.activities/3.3.0\\lib/net461/UiPath.PDF.dll"
+      ]
     }
   ],
   "Conflicts": [],
@@ -125,6 +139,11 @@
     "AvalonEdit": {
       "Id": "AvalonEdit",
       "Version": "5.0.3",
+      "Dependencies": []
+    },
+    "BitMiracle.Docotic.Pdf": {
+      "Id": "BitMiracle.Docotic.Pdf",
+      "Version": "5.10.9957",
       "Dependencies": []
     },
     "BouncyCastle": {
@@ -286,8 +305,26 @@
     },
     "UiPath.OCR.Contracts": {
       "Id": "UiPath.OCR.Contracts",
-      "Version": "2.2.1",
+      "Version": "2.7.1",
       "Dependencies": []
+    },
+    "UiPath.PDF.Activities": {
+      "Id": "UiPath.PDF.Activities",
+      "Version": "3.3.0",
+      "Dependencies": [
+        {
+          "Item1": "UiPath.OCR.Contracts",
+          "Item2": "[2.7.1, )"
+        },
+        {
+          "Item1": "System.ValueTuple",
+          "Item2": "[4.5.0, )"
+        },
+        {
+          "Item1": "BitMiracle.Docotic.Pdf",
+          "Item2": "[5.10.9957, )"
+        }
+      ]
     },
     "UiPath.System.Activities": {
       "Id": "UiPath.System.Activities",
